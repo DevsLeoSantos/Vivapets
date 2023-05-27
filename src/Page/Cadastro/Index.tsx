@@ -3,11 +3,11 @@ import React, { useState } from "react"
 import CampoLogin from "../../Components/CampoLogin";
 
 //Estilos
-import "./Login.css"
+import "./Cadastro.css"
 
 
 
-const Login = () => {
+const Cadastro = () => {
     const [userAdm, setUserAdm] = useState("");
     const [passwordAdm, setPasswordAdm] = useState("");
 
@@ -55,4 +55,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Cadastro
