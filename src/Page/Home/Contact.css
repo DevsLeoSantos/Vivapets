@@ -1,0 +1,57 @@
+.Conteiner_contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+.Conteiner_img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Conteiner_contato_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Conteiner_contato_side h1{
+    font-size: 2.5rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.Botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Link{
+
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.Link p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.link_Wts{
+    color: white;
+    background-color: var(--side-bg-color);
+    border-color: aqua;
+
+}
+.link_Inst{
+    background-color: rgb(255, 255, 255);
+    color: var(--side-bg-color);
+    border: solid 0.1rem;
+    border-color: var(--side-bg-color);
+}

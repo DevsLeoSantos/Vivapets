@@ -1,0 +1,41 @@
+:root {
+  --main-bg-color: #ffffff;
+  --side-bg-color: #5EC5DC;
+  --side-bg2-color: #4d9eb1;
+  --main-tx-color: #0b0b0b;
+  --side-tx-color: #556070;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+dl ol ul {
+  margin-top: 0;
+
+}
+
+ol ul {
+  padding-left: 2rem;
+}
+
+span {
+  color: #ff001e;
+}
