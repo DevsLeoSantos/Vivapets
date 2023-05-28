@@ -75,6 +75,8 @@ button, a {
 .app-container button, .app-container input, .app-container optgroup, .app-container select, .app-container textarea {
   font-family: "DM Sans", sans-serif;
 }
+
+
 .app-content {
   display: flex;
   height: 100%;
@@ -92,6 +94,14 @@ button, a {
 .app-header-left, .app-header-right {
   display: flex;
   align-items: center;
+}
+.app-header-right{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
 }
 .app-header-left {
   flex-grow: 1;
@@ -175,16 +185,27 @@ button, a {
 }
 
 .add-btn {
-  color: #fff;
-  background-color: var(--button-bg);
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  padding: 1rem;
+  border-radius: 1rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--side-bg-color);
+  box-sizing: border-box;
+  border:none;
+  width: 150px;
+  height: 32px;
+  gap: 1rem;
+}
+
+.add-btn p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .notification-btn {
@@ -859,4 +880,8 @@ button, a {
     right: 2px;
     top: 10px;
   }
+}
+
+.sair{
+  background-color: crimson;
 }

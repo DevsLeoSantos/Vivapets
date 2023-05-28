@@ -4,8 +4,8 @@ import Painel from "./Page/Painel";
 function App() {
   return (
     <>
-      <AppRouters />
-      {/* <Painel/> */}
+      {/* <AppRouters/> */}
+      <Painel/>
     </>
   );
 }
