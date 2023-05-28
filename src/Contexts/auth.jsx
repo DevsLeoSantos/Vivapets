@@ -7,13 +7,13 @@ export const AuthProvicer = ({children}) =>{
 
     const loggedUser = {
         id: '123',
-        email, 
+        user, 
     }
 
     localStorage.setItem('user', JSON.stringify(loggedUser))
 
-    const login = (email, password) => {
-        console.log('login auth', { email, password})
+    const login = (user, password) => {
+        console.log('login auth', { user, password})
         if(password == "123"){
             setUser(loggedUser)
             navigate("/Painel")
