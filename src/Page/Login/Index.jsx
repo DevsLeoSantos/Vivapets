@@ -7,6 +7,7 @@ import CampoLogin from "../../Components/CampoLogin";
 
 //Estilos
 import "./Login.css"
+import Cadastro from "../Cadastro/Index";
 
 
 
@@ -34,7 +35,6 @@ const Login = () => {
             <form onSubmit={AoEntrar} className="dados">
                 <div className="dados1">
                     <h2>Login</h2>
-                    <p>{String(authenticated)}</p>
                 </div>
                 <div className="card-content">
                     <CampoLogin
@@ -55,7 +55,7 @@ const Login = () => {
                     />
 
                 </div>
-                <a href="#">Cadastre-se</a>
+                <Cadastro/>
                 <div className="login">
                     <button> Entrar </button>
                     {/* <a href="#" className="recuperar_senha">Esqueceu a senha?</a> */}

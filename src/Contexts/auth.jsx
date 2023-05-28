@@ -25,7 +25,7 @@ export const AuthProvicer = ({children}) =>{
     const logout = () => {
         console.log('logout')
         setUser(null)
-        navigate("/Login")
+        navigate("/")
     }
     const navigate = useNavigate();
     return (

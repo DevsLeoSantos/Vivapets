@@ -13,7 +13,11 @@
 }
 
 .dados {
-    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+
 }
 
 .dados1 {

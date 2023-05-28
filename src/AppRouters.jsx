@@ -16,7 +16,7 @@ const AppRouters = () => {
   const Private = ({ children }) => {
     const { authenticated } = useContext(AuthContext);
     if (!authenticated){
-        return <Navigate to= '/Login'/>
+        return <Navigate to= '/'/>
     }
     return children;
   };
