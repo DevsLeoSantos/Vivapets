@@ -16,7 +16,7 @@ const CardProducts = (props: PropsCardProducts) => {
         <div className="ConteinerMain__CardProducts">
             <div className=" swing Conteiner__CardProducts">
                 <div className="CardProducts" style={{backgroundImage: `url(${props.imgBg})`}}>
-                    <img className='CardProducts_Produto'src={props.img} alt="Unipro Produtos"/>
+                    <img className='CardProducts_Animal'src={props.img} alt="img Animais"/>
                 </div>
                 <h1>{props.text}</h1>
                 <p>{props.line}</p>

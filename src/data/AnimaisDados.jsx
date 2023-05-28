@@ -1,4 +1,4 @@
-const ProdutosUnipro = [
+const AnimaisClientes = [
   {
     id: 1,
     nome: 'THOR',
@@ -37,4 +37,4 @@ const ProdutosUnipro = [
 ]
 
 
-export default ProdutosUnipro;
+export default AnimaisClientes;
