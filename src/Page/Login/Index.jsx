@@ -1,5 +1,8 @@
 //Bibliotecas
-import React, { useState } from "react"
+import React, { useState, useContext} from "react"
+
+import { AuthContext } from "../../Contexts/auth";
+
 import CampoLogin from "../../Components/CampoLogin";
 
 //Estilos
@@ -8,12 +11,19 @@ import "./Login.css"
 
 
 const Login = () => {
+
+   const {authenticated, login} = useContext
+   (AuthContext)
+
+
     const [userAdm, setUserAdm] = useState("");
     const [passwordAdm, setPasswordAdm] = useState("");
 
 
-    const AoEntrar = (e: any) => {
+    const AoEntrar = (e) => {
         e.preventDefault();
+        console.log('botao',userAdm, passwordAdm)
+        login(userAdm,passwordAdm)
         setUserAdm("");
         setPasswordAdm("");
     }
@@ -24,6 +34,7 @@ const Login = () => {
             <form onSubmit={AoEntrar} className="dados">
                 <div className="dados1">
                     <h2>Login</h2>
+                    <p>{String(authenticated)}</p>
                 </div>
                 <div className="card-content">
                     <CampoLogin
@@ -32,7 +43,7 @@ const Login = () => {
                         Type="text"
                         Id="user"
                         Digitado={userAdm}
-                        aoAlterar={(Digitado: React.SetStateAction<string>) => setUserAdm(Digitado)}
+                        aoAlterar={(Digitado) => setUserAdm(Digitado)}
                     />
                     <CampoLogin
                         htmlFor="password"
@@ -40,7 +51,7 @@ const Login = () => {
                         Type="password"
                         Id="password"
                         Digitado={passwordAdm}
-                        aoAlterar={(Digitado: React.SetStateAction<string>) => setPasswordAdm(Digitado)}
+                        aoAlterar={(Digitado) => setPasswordAdm(Digitado)}
                     />
 
                 </div>
@@ -55,4 +66,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Login;

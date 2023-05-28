@@ -1,20 +1,13 @@
-import Footer from "./Components/Fotter"
-import Cadastro from "./Page/Cadastro/Index"
-import Home from "./Page/Home"
-import Login from "./Page/Login/Index"
-
-
+import AppRouters from "./AppRouters";
 function App() {
-  
-
   return (
     <>
-     <Home/>
-     {/* <Cadastro/> */}
-     {/* <Login/> */}
-
+      {/* <Home/> */}
+      {/* <Cadastro/> */}
+      {/* <Login /> */}
+      <AppRouters />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
