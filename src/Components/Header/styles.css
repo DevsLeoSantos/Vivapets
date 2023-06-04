@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  padding-right: 2%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 39px;
+}
+
+.header .logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-box p {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+}
+.header .logo-box span {
+  color: #fff;
+}
+
+.header nav .login-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+}

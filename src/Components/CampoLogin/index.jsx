@@ -1,18 +1,9 @@
 //Estilos
 import "./CampoLogin.css"
 
-interface propsCampoLogin {
-    htmlFor: any; 
-    Label: String; 
-    Type: any; 
-    Id: any; 
-    aoAlterar: any;
-    Digitado: any;
+const CampoLogin = (props) => {
 
-}
-const CampoLogin = (props: propsCampoLogin) => {
-
-    const aoDigita = (evento:any) => {
+    const aoDigita = (evento) => {
         props.aoAlterar(evento.target.value);
     }
 

@@ -1,28 +1,28 @@
-.BotaoCadastrar{
+#idAgendar{
     color: azure;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
 }
-
-.geral-cadastro{
+.geral {
     text-align: center;
 }
 
-.form-cadastrar {
+.form {
     display: flex;
     flex-direction: column;
     max-width: 38rem;
     gap: 1rem;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.dadosa{
+
+.dadosa2{
     display: flex;
     background-color: #ECECEC;
     border-color: #000000;
     border-radius: 0.6rem ;
     padding: .5rem 1rem .5rem 1rem;
-    gap: 2.5rem;
+    gap:2.5rem;
     width: 100%;
     box-sizing: border-box;
 }

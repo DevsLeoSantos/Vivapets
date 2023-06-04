@@ -15,19 +15,33 @@ const Cadastro = () => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Criar Conta</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h1>Colocar Inputs Joao</h1>
+          <form className="form-cadastrar">
+            <h1>Criar Conta</h1>
+            <input
+              className="dadosa"
+              type="text"
+              placeholder="Nome Completo"
+              required
+            />
+            <input
+              className="dadosa"
+              type="email"
+              placeholder="E-mail"
+              required
+            />
+            <input
+              className="dadosa"
+              type="password"
+              placeholder="Senha"
+              required
+            />
+            <button className="botao" type="submit">
+              Registrar
+            </button>
+          </form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
-            Cancelar
-          </Button>
-          <Button variant="success" onClick={handleClose}>
-            Registrar
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

@@ -1,0 +1,11 @@
+.container-flag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.elipse {
+  width: 10.7px;
+  height: 10px;
+  border-radius: 50%;
+}

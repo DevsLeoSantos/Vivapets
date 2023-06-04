@@ -11,21 +11,47 @@ import vet from "../../assets/vet.svg";
 import pets from "../../assets/pets.svg";
 import Dog from "../../assets/DogTelefone.svg";
 
-//Dados
-import Animais from "../../data/AnimaisDados";
+import DogHome from "../../assets/DogHome.png";
+
+
+import Animal1 from "../../assets/Animais/Animal1.svg";
+import Animal2 from "../../assets/Animais/Animal2.svg";
+import Animal3 from "../../assets/Animais/Animal3.svg";
+
+
 
 //CSS
 import "./Benefits.css";
 import "./ConteinerProducts.css";
 import "./Contact.css";
+import "./Home.css";
 
 import BannerCentral from "../../Components/BannerCentral";
-import CardProducts from "../../Components/CardProducts";
 import Footer from "../../Components/Fotter";
+import Header from "../../Components/Header";
+import CardAnimal from "../../Components/CardAnimal";
 
 const Home = () => {
   return (
     <>
+      <Header />
+      <section className="section-1">
+        <div className="content-box">
+          <h1>Cuidaremos de seu PET da forma que ele merece</h1>
+          <p>
+            Traga aqui seu animal para passar um dia em nosso SPA de PETS, onde
+            terá uma experiencia incrível.
+          </p>
+          <button className="schedule-button">Agende já</button>
+        </div>
+        <div className="background-box">
+          <div className="background">
+            <div className="blur"></div>
+            <img src={DogHome} alt="DogHome" />
+          </div>
+        </div>
+      </section>
+
       <section className="conteiner__Beneficios">
         <h1>Nossos Serviços</h1>
         <div className="logos__Beneficios">
@@ -52,29 +78,32 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="Conteiner__Products">
-        <div className="Box__Text">
-          <h1>Confira nossos Ultimos Clientes</h1>
-          <p>
-            Ver o rabo abanando e os olhinhos brilhando é o maior elogio que
-            podemos receber. Nosso compromisso é proporcionar momentos de
-            alegria e bem-estar para os seus melhores amigos de quatro patas.
-          </p>
-        </div>
-        <div className="Box__Products">
-          {Animais.map((Animal) => {
-            const { Raca, imgbgAnimal, imagemDoAnimal, nome } = Animal;
+      <section className="section-3">
+        <h1>Últimos Clientes</h1>
+        <div className="card-list">
+          <CardAnimal
+            animalImage={Animal1}
+            animalName="THOR"
+            animalType="DOG"
+            breed="PITBULL"
+            color="#000"
+          />
 
-            return (
-              <CardProducts
-                key={nome}
-                img={imagemDoAnimal}
-                imgBg={imgbgAnimal}
-                text={nome}
-                line={Raca}
-              />
-            );
-          })}
+          <CardAnimal
+            animalImage={Animal2}
+            animalName="ZEUS"
+            animalType="DOG"
+            breed="ROTTWEILER"
+            color="#000"
+          />
+
+          <CardAnimal
+            animalImage={Animal3}
+            animalName="AQUILES"
+            animalType="DOG"
+            breed="BULDOGUE"
+            color="#000"
+          />
         </div>
       </section>
 
