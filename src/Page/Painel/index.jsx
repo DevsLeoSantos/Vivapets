@@ -159,7 +159,7 @@ function Painel() {
                 const { raca, pet, cor, servico, responsavel, porcent,data, id } =
                   Serviço;
                 return (
-                  <div className="project-box-wrapper">
+                  <div key={id} className="project-box-wrapper">
                     <div
                       className="project-box"
                       style={{ backgroundColor: "#0000002b" }}

@@ -8,11 +8,19 @@ const Agendar = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const AoEntrar = (e) => {
-    e.preventDefault();
-    console.log('dfsa')
-}
+  const [agendaObjeto, setAgendaObjeto] = useState({
+    Pet: "",
+    Raca: "",
+    Cor: "",
+    Serviço: "",
+    Responsavel: "",
+    Telefone: "",
+  });
 
+  const AoAgendar = (e) => {
+    e.preventDefault();
+
+  };
 
 
   return (
@@ -25,16 +33,26 @@ const Agendar = () => {
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <div className="geral">
-            <form className="form">
+            <form className="form" onSubmit={AoAgendar}>
               <h1>Agendamento</h1>
-              <input className="dadosa2" type="text" placeholder="Pet" required />
+              <input
+                className="dadosa2"
+                type="text"
+                placeholder="Pet"
+                required
+              />
               <input
                 className="dadosa2"
                 type="text"
                 placeholder="Raça"
                 required
               />
-              <input className="dadosa2" type="text" placeholder="Cor" required />
+              <input
+                className="dadosa2"
+                type="text"
+                placeholder="Cor"
+                required
+              />
               <input
                 className="dadosa2"
                 type="text"
@@ -53,10 +71,10 @@ const Agendar = () => {
                 placeholder="Telefone"
                 required
               />
-              <button className="botao" type="submit">
-                Agendar
-              </button>
             </form>
+            <button className="botao" type="submit">
+              Agendar
+            </button>
           </div>
         </Modal.Body>
       </Modal>
